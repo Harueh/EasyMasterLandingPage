@@ -28,18 +28,37 @@
   <body>
     <div class="header-bar">
       <img src="./images/logo.svg" alt="Easybank logo" class="logo" />
-      <div class="header-bar-nav">
-        <div>Home</div>
-        <div>About</div>
-        <div>Contact</div>
-        <div>Blog</div>
-        <div>Careers</div>
+      <nav class="header-bar-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </nav>
+      <div class="mobile-nav-container" id="mobileNav">
+        <nav class="mobile-nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </nav>
       </div>
       <div class="header-bar-request-invite">
         <button class="request-invite-button">Request Invite</button>
       </div>
-      <div class="mobile-navigation-menu">
-        <img src="./images/icon-hamburger.svg" alt="Navigation menu" />
+      <div
+        class="mobile-navigation-menu"
+        id="menuButton"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+        aria-label="Toggle navigation menu"
+      >
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="Navigation menu"
+          id="menuIcon"
+        />
       </div>
     </div>
     <div class="advertising-section">
@@ -57,7 +76,7 @@
       </div>
     </div>
     <div class="features-section">
-      <h1>Why choose Easybank?</h1>
+      <h2>Why choose Easybank?</h2>
       <p>
         We leverage Open Banking to turn your bank account into your financial
         hub. Control your finances like never before.
@@ -98,7 +117,7 @@
       </div>
     </div>
     <div class="articles-section">
-      <h1>Latest Articles</h1>
+      <h2>Latest Articles</h2>
       <div class="articles-section-articles-container">
         <div class="articles-section-articles">
           <img
