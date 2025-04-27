@@ -6,27 +6,13 @@ A responsive landing page for a digital banking platform, built as part of the F
 
 ## Overview
 
-This project is a responsive landing page that showcases modern banking features and services. It includes interactive elements, mobile navigation, and a clean, modern design.
-
-### Features
-
-- Fully responsive design for mobile and desktop views
-- Interactive navigation menu with mobile hamburger toggle
-- Hover states for interactive elements
-- Modern CSS features including:
-  - Flexbox and Grid layouts
-  - CSS transitions and animations
-  - SVG icon color manipulation
-  - Mobile-first workflow
+This project is an attempt to replicate a responsive landing page that showcases modern banking features and services. It includes interactive elements, mobile navigation, and a clean, modern design.
 
 ### Built With
 
-- Semantic HTML5 markup
+- HTML5
 - SCSS/Sass
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- JavaScript for interactive features
+- JavaScript
 
 ## Getting Started
 
@@ -55,7 +41,7 @@ easybank-landing-page-master/
 └── index.html
 ```
 
-## What I Learned
+## What I Explored
 
 - Implementation of mobile-first responsive design
 - Creating accessible navigation menus
@@ -63,7 +49,15 @@ easybank-landing-page-master/
 - Using SCSS for better CSS organization
 - Handling interactive states and transitions
 
+## What I learned
+
+- The use of transform to manipulate images
+- Usage of transition for animations
+
+# Limitations
+
+- Currently, the main advertising section image does not scale properly because of the usage of transform
+
 ## Acknowledgments
 
 - Challenge by [Frontend Mentor](https://www.frontendmentor.io)
-- Coded by AgustinJohn.Lacson
