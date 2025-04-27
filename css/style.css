@@ -203,12 +203,6 @@ body .features-section p {
 body .features-section h2 {
   padding-top: 1rem;
 }
-body .features-section > h2 {
-  font-size: 2rem;
-}
-body .features-section > p {
-  width: 50%;
-}
 body .features-section .features-section-subfeatures {
   margin-top: 2rem;
   padding-top: 2rem;
