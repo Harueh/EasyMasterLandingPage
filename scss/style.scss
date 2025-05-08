@@ -156,11 +156,15 @@ body {
         text-align: left;
       }
 
-      h2 {
+      h1 {
         font-size: 2.5rem;
-        font-weight: 400;
+        font-weight: 300;
         margin-bottom: 1rem;
         line-height: 1.2;
+
+        @media (min-width: #{$desktop}) {
+          font-size: 3.5rem;
+        }
       }
 
       p {
@@ -391,7 +395,7 @@ body {
     }
 
     .logo {
-      filter: brightness(0) invert(1); // Makes the logo white
+      // filter: brightness(0) invert(1); // Makes the logo white
       max-width: 140px;
       height: auto;
     }
@@ -401,16 +405,15 @@ body {
       justify-content: center;
       gap: 1rem;
       margin: 1rem 0;
+    }
 
-      .social-media-icon {
-        cursor: pointer;
-        transition: filter 0.3s ease;
+    .footer-bar-social-media-links svg {
+      transition: fill 0.2s ease-in-out;
+      cursor: pointer;
+    }
 
-        &:hover {
-          filter: brightness(0) saturate(100%) invert(80%) sepia(31%)
-            saturate(436%) hue-rotate(93deg) brightness(89%) contrast(85%);
-        }
-      }
+    .footer-bar-social-media-links svg:hover path {
+      fill: #31d35c; /* Change this to your desired hover color */
     }
 
     .footer-bar-nav {

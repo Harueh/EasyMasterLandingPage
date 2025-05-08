@@ -140,11 +140,16 @@ body .advertising-section .advertising-section-text {
     text-align: left;
   }
 }
-body .advertising-section .advertising-section-text h2 {
+body .advertising-section .advertising-section-text h1 {
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
   line-height: 1.2;
+}
+@media (min-width: 720px) {
+  body .advertising-section .advertising-section-text h1 {
+    font-size: 3.5rem;
+  }
 }
 body .advertising-section .advertising-section-text p {
   font-size: 1rem;
@@ -370,7 +375,6 @@ body .footer-bar .footer-col-4 {
   }
 }
 body .footer-bar .logo {
-  filter: brightness(0) invert(1);
   max-width: 140px;
   height: auto;
 }
@@ -380,12 +384,12 @@ body .footer-bar .footer-bar-social-media-links {
   gap: 1rem;
   margin: 1rem 0;
 }
-body .footer-bar .footer-bar-social-media-links .social-media-icon {
+body .footer-bar .footer-bar-social-media-links svg {
+  transition: fill 0.2s ease-in-out;
   cursor: pointer;
-  transition: filter 0.3s ease;
 }
-body .footer-bar .footer-bar-social-media-links .social-media-icon:hover {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(31%) saturate(436%) hue-rotate(93deg) brightness(89%) contrast(85%);
+body .footer-bar .footer-bar-social-media-links svg:hover path {
+  fill: #31d35c; /* Change this to your desired hover color */
 }
 body .footer-bar .footer-bar-nav {
   display: flex;
